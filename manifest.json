@@ -1,0 +1,21 @@
+{
+  "name": "OgarIO",
+  "short_name": "Ogar",
+  "theme_color": "#ec141b",
+  "icons": [
+    {
+      "src": "resizeimage.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "resizeImageB.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "background_color": "#f61616",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/"
+}
