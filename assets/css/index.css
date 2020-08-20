@@ -193,7 +193,7 @@ input[type=checkbox] {
 
 @keyframes colorchange
     {
-      1% { border-color:#ff2400;}
+      0% { border-color:#ff2400;}
      12% { border-color:#e81d1d;}
      23% { border-color:#e8b71d;}
      34% { border-color:#e3e81d;}
@@ -207,7 +207,7 @@ input[type=checkbox] {
 
     @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
     {
-     1% { border-color:#ff2400;}
+     0% { border-color:#ff2400;}
      12% { border-color:#e81d1d;}
      23% { border-color:#e8b71d;}
      34% { border-color:#e3e81d;}

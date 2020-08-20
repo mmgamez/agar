@@ -299,7 +299,7 @@
         wsCleanup();
         gameReset();
         setTimeout(function() {
-            setserver(wsUrl);
+            window.setserver(wsUrl);
         }, reconnectDelay *= 1.5);
     }
     function wsSend(data) {
@@ -634,7 +634,8 @@
         moreZoom: false,
         fillSkin: true,
         backgroundSectors: false,
-        jellyPhysics: true
+        jellyPhysics: true,
+        longChat:false
     };
     var pressed = {
         " ": false,
@@ -761,7 +762,12 @@
         chat.visible = true;
         var canvas = chat.canvas;
         var ctx = canvas.getContext("2d");
-        var latestMessages = chat.messages.slice(-20);
+        var latestMessages;
+      if(settings.longChat){
+        latestMessages = chat.messages.slice(-35);
+      } else {
+        latestMessages= chat.messages.slice(-20);
+      }
         var lines = [];
         for (var i = 0, len = latestMessages.length; i < len; i++)
             lines.push([
