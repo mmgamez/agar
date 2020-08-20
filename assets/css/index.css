@@ -72,7 +72,7 @@ input[type=checkbox] {
     transform: translate(-50%, -50%);
   animation: colorchange 5s linear 1s infinite; /* animation-name followed by duration in seconds*/
          /* you could also use milliseconds (ms) or something like 2.5s */
-      -webkit-animation: colorchange 10s linear 5s infinite alternate; /* Chrome and Safari */
+      -webkit-animation: colorchange 5s linear 0s infinite alternate; /* Chrome and Safari */
 }
 #helloDialog2 {
     width: 300px;

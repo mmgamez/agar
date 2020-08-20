@@ -761,7 +761,7 @@
         chat.visible = true;
         var canvas = chat.canvas;
         var ctx = canvas.getContext("2d");
-        var latestMessages = chat.messages.slice(-15);
+        var latestMessages = chat.messages.slice(-20);
         var lines = [];
         for (var i = 0, len = latestMessages.length; i < len; i++)
             lines.push([
