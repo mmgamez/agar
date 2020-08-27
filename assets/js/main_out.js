@@ -463,7 +463,7 @@
                     fawzyer = !!(flags & 0x10);
 
                 if (server && name !== "SERVER") name = "[SERVER] " + name;
-                if (admin) {name = "[ADMIN] " + name; color = "#42f5b3"}
+                if (admin) {name = "[OWNER] " + name; color = "#42f5b3"}
                 if (mod) {name = "[MOD] " + name;}
             console.log(color.toString())
             
