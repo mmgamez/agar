@@ -5,7 +5,10 @@
         alert('Your browser does not support required features, please update your browser or get a new one.');
         window.stop();
     }
-
+String.prototype.replaceAt = function(index, replacement) {
+    return this.substr(0, index) + replacement + this.substr(index + replacement.length);
+}
+  
     function byId(id) {return document.getElementById(id);}
     function byClass(clss, parent) {return (parent || document).getElementsByClassName(clss);}
 
@@ -796,19 +799,22 @@
         }
         canvas.width = width;
         canvas.height = height;
+      var complexesfake;
         for (var i = 0; i < len; i++) {
             width = 0;
             var complexes = lines[i];
             for (var j = 0; j < complexes.length; j++) {
+              var thetext = complexes[j].text;
                 if(complexes[j].text.startsWith(" ")){
                 switch(complexes[j].text.charAt(1)){
                   case "*":
                     ctx.font="bold small-caps 18px Arial";
-                    complexes[j].text.charAt;
+                    thetext.replace("*", "")
+                    
                     break;
                   case "\\":
                     ctx.font="italic 18px Ubuntu";
-                    complexes[j].text.replace("\\", "");
+                    thetext.replace("\\", "")
                     break;
                   default:
                     ctx.font = "18px Ubuntu";
@@ -817,7 +823,7 @@
                 ctx.font = "18px Ubuntu";
               }
                 ctx.fillStyle = complexes[j].color;
-                ctx.fillText(complexes[j].text, width, 20 * (1 + i));
+                ctx.fillText(thetext, width, 20 * (1 + i));
                 width += complexes[j].width;
             }
         }
