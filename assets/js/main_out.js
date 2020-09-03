@@ -798,6 +798,9 @@
             var complexes = lines[i];
             for (var j = 0; j < complexes.length; j++) {
                 ctx.font = "18px Ubuntu";
+              if(complexes[j].text.startsWith("*")){
+                ctx.font = "900 19px Ubuntu"
+              }
                 ctx.fillStyle = complexes[j].color;
                 ctx.fillText(complexes[j].text, width, 20 * (1 + i));
                 width += complexes[j].width;
