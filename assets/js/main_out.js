@@ -786,12 +786,9 @@
             var complexes = lines[i];
             for (var j = 0; j < complexes.length; j++) {
                 
-              if(complexes[j].text.startsWith(" *")){
-                ctx.font="small-caps 18px Arial";
-                complexes[j].text = complexes[j].text.replace("*", "")
-              } else {
+              
                 ctx.font = "18px Ubuntu";
-              }
+              
                 complexes[j].width = ctx.measureText(complexes[j].text).width;
                 thisLineWidth += complexes[j].width;
             }
@@ -803,9 +800,19 @@
             width = 0;
             var complexes = lines[i];
             for (var j = 0; j < complexes.length; j++) {
-                if(complexes[j].text.startsWith(" *")){
-                ctx.font="small-caps 18px Arial";
-                complexes[j].text = complexes[j].text.replace("*", "")
+                if(complexes[j].text.startsWith(" ")){
+                switch(complexes[j].text.charAt(1)){
+                  case "*":
+                    ctx.font="bold small-caps 18px Arial";
+                    complexes[j].text.charAt;
+                    break;
+                  case "\\":
+                    ctx.font="italic 18px Ubuntu";
+                    complexes[j].text.replace("\\", "");
+                    break;
+                  default:
+                    ctx.font = "18px Ubuntu";
+                }
               } else {
                 ctx.font = "18px Ubuntu";
               }
