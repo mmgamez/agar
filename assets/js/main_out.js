@@ -807,9 +807,15 @@
                 }else if(complexes[j].text.startsWith(" \\")){
                   ctx.font = "italic 18px Arial";
                   complexes[j].text = complexes[j].text.replace("\\", "")
+                }else if(complexes[j].text.startsWith(" ###")){
+                  ctx.font = "26px Comic Sans MS";
+                  complexes[j].text = complexes[j].text.replace("###", "")
                 }else if(complexes[j].text.startsWith(" ##")){
-                  ctx.font = "18px Comic Sans MS";
+                  ctx.font = "20px Comic Sans MS";
                   complexes[j].text = complexes[j].text.replace("##", "")
+                }else if(complexes[j].text.startsWith(" ^^")){
+                  ctx.font = "13px Comic Sans MS";
+                  complexes[j].text = complexes[j].text.replace("^^", "")
                 }else{
                   ctx.font = "18px Ubuntu"
                 }
