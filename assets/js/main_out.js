@@ -460,14 +460,14 @@
                 var server = !!(flags & 0x80),
                     admin = !!(flags & 0x40),
                     mod = !!(flags & 0x20),
-                    fawzyer = !!(flags & 0x10);
+                    helper = !!(flags & 0x10);
 
                 if (server && name !== "SERVER") name = "[SERVER] " + name;
                 if (admin) {name = "[OWNER] " + name; color = "#42f5b3"}
                 if (mod) {name = "[MOD] " + name;}
             console.log(color.toString())
             
-                if (fawzyer) {name = "[RealFawzy] " + name;}
+                if (helper) {name = "[Helper] " + name;}
             
                 var wait = Math.max(3000, 1000 + message.length * 150);
                 chat.waitUntil = syncUpdStamp - chat.waitUntil > 1000 ? syncUpdStamp + wait : chat.waitUntil + wait;
