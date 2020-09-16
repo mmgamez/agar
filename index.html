@@ -93,8 +93,8 @@
   <div class="mdc-button__ripple"></div>
   <span class="mdc-button__label" id="labell">Play</span>
 </button>
-            <button id="spectate-btn" onclick="spectate()" class="btn btn-warning btn-spectate btn-needs-server glyphicon glyphicon-eye-open"></button>
-            <button id="gallery-btn" onclick="openSkinsList()" class="btn btn-play btn-primary btn-needs-server btn-info">Skins Gallery</button>
+            <button id="spectate-btn" onclick="spectate();_gs('event', 'Started spectating.')" class="btn btn-warning btn-spectate btn-needs-server glyphicon glyphicon-eye-open"></button>
+            <button id="gallery-btn" onclick="openSkinsList();_gs('event', 'Started viewing skins gallery.')" class="btn btn-play btn-primary btn-needs-server btn-info">Skins Gallery</button>
 
             <div id="settings" class="checkbox">
                 <div style="margin: 6px;">
