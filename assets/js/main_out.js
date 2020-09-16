@@ -506,7 +506,7 @@
         writer.setUint8(0x00);
         writer.setStringUTF8(name);
         wsSend(writer);
-      _
+      
     }
     function sendChat(text) {
         var writer = new Writer();
