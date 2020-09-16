@@ -12,6 +12,16 @@ input[type=checkbox] {
     cursor: pointer;
 }
 
+html {
+  overscroll-behavior-x: none;
+  touch-action: none;
+}
+
+body {
+  overscroll-behavior-x: none;
+  touch-action: none;
+}
+
 #overlays, #connecting {
     opacity: 0;
     position: absolute;
