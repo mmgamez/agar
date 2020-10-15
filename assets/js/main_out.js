@@ -817,7 +817,14 @@
                 }else if(complexes[j].text.startsWith(" ^^")){
                   ctx.font = "13px Comic Sans MS";
                   complexes[j].text = complexes[j].text.replace("^^", "")
-                }else if(complexes[j].text.startsWith(" $$$")){}else{
+                }else if(complexes[j].text.startsWith(" $$$")){
+                  
+                }
+                  else if(complexes[j].text.startsWith(" \%\%")){
+                  ctx.font = "24px Papyrus";
+                  complexes[j].text = complexes[j].text.replace("\%\%", "")
+                  }
+                  else{
                   ctx.font = "18px Ubuntu"
                 }
               } else {
