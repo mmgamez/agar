@@ -80,9 +80,9 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  animation: colorchange 5s linear 1s infinite; /* animation-name followed by duration in seconds*/
-         /* you could also use milliseconds (ms) or something like 2.5s */
-      -webkit-animation: colorchange 5s linear 0s infinite alternate; /* Chrome and Safari */
+  border-color:#42c4de;
+  animation:colorchange 14s infinite;
+animation-direction:alternate;
 }
 #helloDialog2 {
     width: 300px;
@@ -203,21 +203,16 @@ body {
 
 @keyframes colorchange
     {
-      0% { border-color:#ff2400;}
-     12% { border-color:#e81d1d;}
-     23% { border-color:#e8b71d;}
-     34% { border-color:#e3e81d;}
-     45% { border-color:#1de840;}
-     56% { border-color:#1ddde8;}
-     67% { border-color:#2b1de8;}
-     78% { border-color:#dd00f3;} 
-     89% { border-color:#dd00f3;}
-    100% { border-color:#ff2400;}
+     25%{border-color:#41c4de;}50%{border-color:#8cc73f;}75%{border-color:#f3d333;}100%{border-color:#f78e56;}
    }
 
     @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
     {
-     0% { border-color:#ff2400;}
+     25%{border-color:#41c4de;}50%{border-color:#8cc73f;}75%{border-color:#f3d333;}100%{border-color:#f78e56;}
+   }
+/*
+old colorchange
+0% { border-color:#ff2400;}
      12% { border-color:#e81d1d;}
      23% { border-color:#e8b71d;}
      34% { border-color:#e3e81d;}
@@ -227,4 +222,4 @@ body {
      78% { border-color:#dd00f3;} 
      89% { border-color:#dd00f3;}
     100% { border-color:#ff2400;}
-   }
+*/
