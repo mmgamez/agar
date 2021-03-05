@@ -301,9 +301,7 @@
         setTimeout(function() {
             window.setserver(wsUrl);
         }, reconnectDelay *= 1.5);
-      if(e == "Kicked from server"){
-        window.close()
-      }
+      alert(e)
     }
     function wsSend(data) {
         if (!ws) return;
