@@ -301,7 +301,6 @@
         setTimeout(function() {
             window.setserver(wsUrl);
         }, reconnectDelay *= 1.5);
-      alert(JSON.stringify(e))
     }
     function wsSend(data) {
         if (!ws) return;
