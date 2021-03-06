@@ -38,6 +38,20 @@
 
   _gs('GSN-074643-N');
   
+  // Generate identification string
+  function makeid(length) {
+   var result           = '';
+   var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+   var charactersLength = characters.length;
+   for ( var i = 0; i < length; i++ ) {
+      result += characters.charAt(Math.floor(Math.random() * charactersLength));
+   }
+   return result;
+}
+  if(!localStorage.getItem("ID")){
+    localStorage.setItem("ID", makeid(10))
+  }
+  
 </script>
 
   

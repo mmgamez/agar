@@ -6,14 +6,6 @@
         window.stop();
     }
     
-    if(!localStorage.getItem("id")){
-      var letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890abcdefghijklmnopqrstuvwxyz";
-      var id = "";
-      for(var i; i<10; i++){
-        id+=letters.charAt(Math.floor(Math.random() * letters.length))
-      };
-      
-    }
     
     function byId(id) {return document.getElementById(id);}
     function byClass(clss, parent) {return (parent || document).getElementsByClassName(clss);}
