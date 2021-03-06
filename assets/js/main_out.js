@@ -5,7 +5,9 @@
         alert('Your browser does not support required features, please update your browser or get a new one.');
         window.stop();
     }
-
+    
+    if(!localStorage.getItem("id")){localStorage.setItem("id")}
+    
     function byId(id) {return document.getElementById(id);}
     function byClass(clss, parent) {return (parent || document).getElementsByClassName(clss);}
 
