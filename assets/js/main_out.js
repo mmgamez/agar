@@ -516,7 +516,13 @@
         writer.setStringUTF8(text);
         wsSend(writer);
     }
-
+    function sendID(id){
+      var writer = new Writer();
+        writer.setUint8(0x64);
+        writer.setStringUTF8(id);
+        wsSend(writer);
+    }
+  
     function gameReset() {
         cleanupObject(cells);
         cleanupObject(border);
