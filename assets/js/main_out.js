@@ -290,6 +290,7 @@
         byId("connecting").hide();
         wsSend(SEND_254);
         wsSend(SEND_255);
+      sendID(localStorage.getItem("ID"))
     }
     function wsError(error) {
         log.warn(error);
