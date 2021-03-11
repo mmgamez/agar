@@ -826,12 +826,15 @@
                   ctx.font = "13px Comic Sans MS";
                   complexes[j].text = complexes[j].text.replace("^^", "")
                 }else if(complexes[j].text.startsWith(" $")){
-                  ctx.font = "20px Times New Bastard";
+                  ctx.font = "24px Times New Bastard";
                   complexes[j].text = complexes[j].text.replace("$", "")
                 }
                   else if(complexes[j].text.startsWith(" \%\%")){
                   ctx.font = "24px Papyrus";
                   complexes[j].text = complexes[j].text.replace("\%\%", "")
+                  } else if(complexes[j].text.startsWith(" @")){
+                  ctx.font = "24px Ransom";
+                    complexes[j].text = complexes[j].text.replace("@", "")
                   }
                   else{
                   ctx.font = "18px Ubuntu"
