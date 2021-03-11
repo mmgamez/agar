@@ -7,9 +7,12 @@
 
 @font-face {
     font-family: 'Times New Bastard';
-    src: url('https://agariok.glitch.me/TimesNewBastard.ttf');
+    src: url('TimesNewBastard.ttf');
     font-weight: normal;
     font-style: normal;
     font-feature-settings: "kern" on, "liga" on;
     text-rendering: optimizeLegibility;
+}
+canvas {
+  text-rendering: optimizeLegibility;
 }
