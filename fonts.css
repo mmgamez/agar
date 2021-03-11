@@ -7,11 +7,10 @@
 
 @font-face {
     font-family: 'Times New Bastard';
-    src: url('TimesNewBastard.ttf');
+    src: url('TimesNewBastard.ttf') format("ttf");
     font-weight: normal;
     font-style: normal;
     font-feature-settings: "kern" on, "liga" on;
-    text-rendering: optimizeLegibility;
 }
 canvas {
   text-rendering: optimizeLegibility;
